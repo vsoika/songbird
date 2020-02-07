@@ -1,0 +1,25 @@
+.list-group {
+    list-style: none;
+    margin-top: 20px;
+    width: 500px;
+    background: grey;
+}
+
+.list-group-item, .list-group-default {
+    color: white;
+    cursor: pointer;
+    background: grey;
+    font-size: 20px;
+}
+
+.list-group-item:hover {
+    background: rgb(87, 86, 86);
+}
+
+.wrong {
+    color: red;
+}
+
+.correct {
+    color: green;
+}
