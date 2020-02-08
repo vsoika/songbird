@@ -21,3 +21,32 @@
     text-align: center;
 }
 
+.rhap_progress-section {
+    color: white;
+}
+
+.rhap_controls-section {
+    margin-top: 10px;
+    width: 310px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.rhap_button-clear {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: #970fc0;
+    border: none;
+}
+
+.rhap_button-clear svg {
+    width: 1.5em;
+    height: 1.5em;
+}
+
+.rhap_button-clear:hover {
+    cursor: pointer;
+    background-color: rgb(189, 123, 189);
+}
+

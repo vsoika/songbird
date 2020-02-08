@@ -1,8 +1,9 @@
 import React from 'react';
 import './header.css';
+import PropTypes from 'prop-types';
 
 const Header = ({ page, score }) => {
-  const categories = ['Pop musicians', 'Rock musicians', 'Alternative musicians', 'Russian rock musicians', 'Rap musicians', 'Russian rap musicians'];
+  const categories = ['Rock', 'Alternative', 'Pop', 'Russian Rock', 'Russian Rap', 'Rap'];
 
   const listItems = categories.map((item, index) => {
     let className = 'list-item';

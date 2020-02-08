@@ -2,24 +2,31 @@
     list-style: none;
     margin-top: 20px;
     width: 500px;
-    background: grey;
+    background:#5a6268 !important;
+    border-radius: 10px;
 }
 
-.list-group-item, .list-group-default {
+.none {
+    display: none;
+}
+
+.list-group-item, .default {
     color: white;
     cursor: pointer;
-    background: grey;
+    background:#5a6268 !important;
     font-size: 20px;
+    border-radius: 10px;
+    font-weight: bold;
 }
 
 .list-group-item:hover {
-    background: rgb(87, 86, 86);
+    background:#6e7275 !important;
 }
 
 .wrong {
-    color: red;
+    color: #801e1e;
 }
 
 .correct {
-    color: green;
+    color: #205010;;
 }
