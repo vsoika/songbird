@@ -1,52 +1,54 @@
 import React, { Component } from 'react';
+import rightSound from './assets/right.mp3';
+import wrongSound from './assets/wrong.mp3'
 import './answer-list.css';
 
 class AnswerList extends Component {
     state = {
-        isCorrectAnswer: false,
         maxPoints: 5,
-        currentPage: 1
+        currentPage: null
     };
 
     checkAnswer = (e) => {
         const target = e.target;
-        const { increaseScore, showMusician, showWrongMusician, page } = this.props;
+        const { increaseScore, showMusician, showSelectedMusician, page } = this.props;
+        let { maxPoints, currentPage } = this.state;
+        const gotRightAnswer = currentPage === page;
 
-        if(this.state.currentPage !== page) {
+        if(gotRightAnswer) {
+            showSelectedMusician(target.textContent);
+        } else if (target.classList.contains('right')) {
+            this.playSoundByClick(rightSound);
+            showMusician(target.textContent);
+            showSelectedMusician(target.textContent);
+            increaseScore(maxPoints);
+            target.classList.remove('right');
+
             this.setState({
-                isCorrectAnswer: false,
                 currentPage: page,
                 maxPoints: 5
             })
-        }
-
-        let { isCorrectAnswer,  maxPoints } = this.state;
-
-        if(isCorrectAnswer && this.state.currentPage === page) return;
-
-        if (target.classList.contains('right')) {
-            this.setState({
-                isCorrectAnswer: true,
-            });
-
-            showMusician(target.textContent);
-            increaseScore(maxPoints);
-
-            target.classList.remove('right');
 
             return target.classList.add('correct');
+
         } else {
             this.setState({
-                maxPoints: this.state.maxPoints === 0 ? 0 : this.state.maxPoints - 1
+                maxPoints: this.state.maxPoints === 0 ? 0 : this.state.maxPoints - 1,
             })
 
-            showWrongMusician(target.textContent);
+            this.playSoundByClick(wrongSound);
+            showSelectedMusician(target.textContent);
             return target.classList.add('wrong');
         }
     }
 
+    playSoundByClick = (src) => {
+        const sound = new Audio(src);
+        sound.play();
+    }
+
     render() {
-        const { items, musicianId, page, isFinishQuiz } = this.props;
+        const { items, randomMusician, page, isFinishQuiz } = this.props;
         let elements = null;
 
         if (!isFinishQuiz) {
@@ -54,14 +56,12 @@ class AnswerList extends Component {
                 const { id, name } = item;
                 let className = page % 2 === 0 ? 'list-group-item' : 'list-group-item default';
 
-                if(index === musicianId) {
+                if(index === randomMusician) {
                     className += ' right';
                 }
         
                 return (
-                <li key={id} className={className} >
-                { name }
-                </li>
+                <li key={id} className={className}>{ name }</li>
                 );
             });
         }

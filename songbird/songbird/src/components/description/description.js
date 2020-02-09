@@ -3,21 +3,27 @@ import AudioPlayer from "react-h5-audio-player";
 import './description.css';
 import musicianData from '../music-container/musicianData';
 
-const Description = ({ wrongMusician, rightMusician, page, isFinishQuiz }) => {
+const Description = ({ selectedMusician, page, isFinishQuiz }) => {
     const currentData = musicianData[page - 1];
-    const musician = rightMusician ? rightMusician : wrongMusician ? wrongMusician : null;
+    const musician = selectedMusician ? selectedMusician : null;
     let element = null;
+
+    console.log(isFinishQuiz)
 
     if(!isFinishQuiz) {
         element = currentData.map((item, index) => {
             if(item.name === musician) {
                 return (
                     <Fragment key={index}>
-                        <img src={item.image}></img>
-                        <h5>{item.name}</h5>
-                        <span>{item.direction}</span>
+                        <div className="description-container">
+                                <img src={item.image}></img>                        
+                            <div className='musician-info'>
+                                <h5>{item.name}</h5>
+                                <span>{item.direction}</span>
+                                <p>{item.description}</p>
+                            </div>
+                        </div>
                         <AudioPlayer src={item.audio} ></AudioPlayer>
-                        <span>{item.description}</span>
                     </Fragment>
                 )
             }

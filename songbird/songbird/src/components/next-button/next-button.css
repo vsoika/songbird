@@ -6,6 +6,7 @@
 .jumbotron {
     background:#5a6268 !important;
     color: white;
+    margin: 50px auto;
 }
 
 .jumbotron h3 {
@@ -15,4 +16,12 @@
 
 .jumbotron p {
     font-size: 20px;
+}
+
+.next {
+    background: #753d92 !important;
+}
+
+.next:hover {
+    background: #b36ad8 !important;
 }

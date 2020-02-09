@@ -1,7 +1,7 @@
 .list-group {
     list-style: none;
     margin-top: 20px;
-    width: 500px;
+    width: 100%;
     background:#5a6268 !important;
     border-radius: 10px;
 }
@@ -14,7 +14,8 @@
     color: white;
     cursor: pointer;
     background:#5a6268 !important;
-    font-size: 20px;
+    font-size: 17px;
+    padding: 5px;
     border-radius: 10px;
     font-weight: bold;
 }

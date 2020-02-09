@@ -33,16 +33,17 @@
 }
 
 .rhap_button-clear {
-    height: 50px;
-    width: 50px;
+    height: 40px;
+    width: 40px;
     border-radius: 50%;
     background-color: #970fc0;
     border: none;
 }
 
 .rhap_button-clear svg {
-    width: 1.5em;
-    height: 1.5em;
+    width: 25px;
+    height: 25px;
+    color: #222;
 }
 
 .rhap_button-clear:hover {

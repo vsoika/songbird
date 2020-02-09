@@ -4,14 +4,14 @@ import './musician-container.css';
 import incognitoLogo from './assets/2-t6CyzF_400x400.png';
 import musicianData from './musicianData';
 
-const MusicianContainer = ({ page, musicianId, musicianName, isFinishQuiz }) => {
-    const musician = musicianName ? musicianName : '*****';
+const MusicianContainer = ({ page, randomMusician, rightMusician, isFinishQuiz }) => {
+    const musician = rightMusician ? rightMusician : '*****';
     let logo = incognitoLogo;
     let alt = "incognito";
 
-    if(musicianName && !isFinishQuiz) {
-        logo = musicianData[page - 1][musicianId].image;
-        alt = musicianName;
+    if(rightMusician && !isFinishQuiz) {
+        logo = musicianData[page - 1][randomMusician].image;
+        alt = rightMusician;
     }
 
     return (
@@ -20,8 +20,8 @@ const MusicianContainer = ({ page, musicianId, musicianName, isFinishQuiz }) => 
         : <div className="musician-container">
             <img src={logo} alt={alt} className="musician-image"></img>
             <div>
-            <h5>{musician}</h5>
-                <AudioPlayer src={musicianData[page - 1][musicianId].audio }/>
+            <h5>{ musician }</h5>
+                <AudioPlayer src={ musicianData[page - 1][randomMusician].audio } paused={true}/>
             </div>
           </div>
     );

@@ -147,7 +147,7 @@ const musicianData = [
             id: 6,
             name: 'Dua Lipa',
             direction: 'Pop',
-            description: `Dua Lipa born 22 August 1995) is an English singer, songwriter and model. After working as a model, she signed with Warner Music Group in 2015 and released her eponymous debut album in 2017. The album reached number one on the UK Albums Chart, and yielded seven singles, including "Be the One" and "IDGAF" and the UK number-one single "New Rules", which also reached number six in the US. In 2018, Lipa won the Brit Awards for British Female Solo Artist and British Breakthrough Act.`,
+            description: `Dua Lipa born 22 August 1995 is an English singer, songwriter and model. After working as a model, she signed with Warner Music Group in 2015 and released her eponymous debut album in 2017. The album reached number one on the UK Albums Chart, and yielded seven singles, including "Be the One" and "IDGAF" and the UK number-one single "New Rules", which also reached number six in the US. In 2018, Lipa won the Brit Awards for British Female Solo Artist and British Breakthrough Act.`,
             image: 'https://aromo.ru/upload/medialibrary/902/official_portrait_dua_lipa_yslbeaute__vid259685e.jpg',
             audio: 'https://oxy.sunproxy.net/file/L3JBaVFyT2crVmRpa09ocEhCWHFTNlpiVFk3TEltS0pHMkh4R3o3YWdPdUdodnF2bGN0L1JPa2dwdDVqZHhpL0doYWd0QVBzUWg5L0ZCSEVoSSs5OXQwMWh6UEtjZUdiQThvSTMvVVdQajA9/Dua_Lipa_-_Don_t_Start_Now_(oxy.fm).mp3'
         }       

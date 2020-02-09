@@ -1,46 +1,51 @@
 .description img {
-    width: 25%;
+    width: 40%;
     float: left;
-    margin: 0 0 0 3.5%;
+    margin: 0 3.5% 0 3.5%;
     background: rgb(189, 123, 189);
     border-radius: 5px;
     padding: 2%;
 }
 
+.description h5 {
+    color:#f57113;
+    width: 100%;
+    font-size: 30px;
+    margin-top: 30px;
+    margin-left: 10px;
+}
+
 .description {
-    width: 500px;
+    padding: 25px;
+    width: 100%;
     margin-top: 20px;
     font-size: 20px;
-}
-
-/* .rhap_progress-section {
-    color: white;
-}
-
-.rhap_controls-section {
-    margin-top: 10px;
-    width: 200px;
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    color: rgb(214, 214, 214);;
 }
 
-.rhap_button-clear {
-    height: 30px;
-    width: 30px;
-    border-radius: 50%;
-    background-color: #970fc0;
-    border: none;
-} */
-
-/* .rhap_button-clear svg {
-    width: 1em;
-    height: 1em;
+.description p {
+    text-align: justify;
+    margin-left: 10px;
 }
 
-.rhap_button-clear:hover {
-    cursor: pointer;
-    background-color: rgb(189, 123, 189);
-} */
+.description span {
+    color: #222;
+    font-weight: bold;
+}
+
+.rhap_container {
+    margin: 0 auto;
+}
+
+.musician-info {
+    margin-left: 10px;
+}
+
+
+
+
 
 
  

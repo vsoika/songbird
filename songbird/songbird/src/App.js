@@ -10,11 +10,10 @@ import Description from './components/description/description';
 class App extends Component {
   state = {
     score: 0,
-    musicianData: musicianData,
     page: 1,
     randomMusician: this.randomAudio(),
     rightMusician: null,
-    wrongMusician: null,
+    selectedMusician: null,
     isFinishQuiz: false
   }
 
@@ -34,9 +33,9 @@ class App extends Component {
     });
   }
 
-  showWrongMusician = (name) => {
+  showSelectedMusician = (name) => {
     this.setState({
-      wrongMusician: name
+      selectedMusician: name
     });
   }
 
@@ -47,14 +46,17 @@ class App extends Component {
     if (page === maxCategories) {
       this.setState({
         page: 0,
-        isFinishQuiz: true
+        isFinishQuiz: true,
+        randomMusician: this.randomAudio(),
+        rightMusician: null,
+        selectedMusician: null
       })
     } else {
       this.setState({
         page: this.state.page + 1,
         randomMusician: this.randomAudio(),
         rightMusician: null,
-        wrongMusician: null,
+        selectedMusician: null,
         isFinishQuiz: false
       })
     }
@@ -70,27 +72,19 @@ class App extends Component {
   }
 
   render() {
-    const { musicianData, page, randomMusician, score, rightMusician, isFinishQuiz } = this.state;
+    const { page, score, rightMusician, isFinishQuiz } = this.state;
 
     return (
       <div className="App">
-        <Header
-          page={page}
-          score={score} />
-        <MusicianContainer
-          isFinishQuiz={isFinishQuiz}
-          musicianId={randomMusician}
-          page={page}
-          musicianName={rightMusician} />
+        <Header page={ page } score={ score } />
+        <MusicianContainer { ...this.state } />
         <div className="music-container">
           <AnswerList
-            page={page}
-            isFinishQuiz={isFinishQuiz}
+            { ...this.state }
             items={musicianData[page - 1]}
-            musicianId={randomMusician}
             increaseScore={this.handleIncreaseScore}
             showMusician={this.showRightMusician}
-            showWrongMusician={this.showWrongMusician} />
+            showSelectedMusician={this.showSelectedMusician} />
           <Description {...this.state} />
           <NextButton
             score={score}
