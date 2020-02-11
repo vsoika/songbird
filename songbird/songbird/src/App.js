@@ -6,9 +6,11 @@ import { AnswerList } from './components/answer-container/answer-list';
 import musicianData from './components/music-container/musicianData';
 import NextButton from './components/next-button/next-button';
 import Description from './components/description/description';
+import { default as Confetti } from './components/confetti/confetti';
 
 class App extends Component {
   state = {
+    maxScore: 30,
     score: 0,
     page: 1,
     randomMusician: this.randomAudio(),
@@ -72,10 +74,12 @@ class App extends Component {
   }
 
   render() {
-    const { page, score, rightMusician, isFinishQuiz } = this.state;
+    const { page, score, rightMusician, isFinishQuiz, maxScore } = this.state;
+    const isConfetti = isFinishQuiz && score === maxScore;
 
     return (
       <div className="App">
+        { isConfetti ? <Confetti /> : null }
         <Header page={ page } score={ score } />
         <MusicianContainer { ...this.state } />
         <div className="music-container">

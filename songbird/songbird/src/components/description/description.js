@@ -8,8 +8,6 @@ const Description = ({ selectedMusician, page, isFinishQuiz }) => {
     const musician = selectedMusician ? selectedMusician : null;
     let element = null;
 
-    console.log(isFinishQuiz)
-
     if(!isFinishQuiz) {
         element = currentData.map((item, index) => {
             if(item.name === musician) {
@@ -23,7 +21,7 @@ const Description = ({ selectedMusician, page, isFinishQuiz }) => {
                                 <p>{item.description}</p>
                             </div>
                         </div>
-                        <AudioPlayer src={item.audio} ></AudioPlayer>
+                        <AudioPlayer src={item.audio}></AudioPlayer>
                     </Fragment>
                 )
             }

@@ -21,7 +21,7 @@ const MusicianContainer = ({ page, randomMusician, rightMusician, isFinishQuiz }
             <img src={logo} alt={alt} className="musician-image"></img>
             <div>
             <h5>{ musician }</h5>
-                <AudioPlayer src={ musicianData[page - 1][randomMusician].audio } paused={true}/>
+                <AudioPlayer src={ musicianData[page - 1][randomMusician].audio } autoPlayAfterSrcChange={false}/>
             </div>
           </div>
     );
