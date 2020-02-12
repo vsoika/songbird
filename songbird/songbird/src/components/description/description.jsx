@@ -1,7 +1,7 @@
 import React, { Fragment } from 'react';
 import AudioPlayer from "react-h5-audio-player";
 import './description.css';
-import musicianData from '../music-container/musicianData';
+import musicianData from '../musician-data/musicianData';
 
 const Description = ({ selectedMusician, page, isFinishQuiz }) => {
     const currentData = musicianData[page - 1];

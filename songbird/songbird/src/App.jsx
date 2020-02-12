@@ -3,7 +3,7 @@ import './App.css';
 import { Header } from './components/header/header';
 import { MusicianContainer } from './components/music-container/musician-container';
 import { AnswerList } from './components/answer-container/answer-list';
-import musicianData from './components/music-container/musicianData';
+import musicianData from './components/musician-data/musicianData';
 import NextButton from './components/next-button/next-button';
 import Description from './components/description/description';
 import { default as Confetti } from './components/confetti/confetti';

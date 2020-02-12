@@ -6,7 +6,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-image: url(https://img2.goodfon.ru/original/1920x1200/d/63/vinyl-macro-vinil-plastinka.jpg);
-  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .container {

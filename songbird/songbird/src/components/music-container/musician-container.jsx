@@ -3,7 +3,7 @@ import AudioPlayer from "react-h5-audio-player";
 import 'react-h5-audio-player/lib/styles.css';
 import './musician-container.css';
 import incognitoLogo from './assets/2-t6CyzF_400x400.png';
-import musicianData from './musicianData';
+import musicianData from '../musician-data/musicianData';
 
 const MusicianContainer = ({ page, randomMusician, rightMusician, isFinishQuiz }) => {
     const musician = rightMusician ? rightMusician : '*****';
