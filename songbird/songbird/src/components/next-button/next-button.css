@@ -19,9 +19,15 @@
 }
 
 .next {
-    background: #753d92 !important;
+    background: #1e5973 !important;
+    border: 1px solid rgb(12, 58, 82);
 }
 
 .next:hover {
-    background: #b36ad8 !important;
+    background: rgb(127, 215, 249) !important;
+}
+
+.btn-secondary.disabled, .btn-secondary:disabled {
+    background-color: rgba(12, 58, 82, 0.55); 
+    border: 1px solid rgb(12, 58, 82);
 }

@@ -5,7 +5,7 @@ const musicianData = [
             name: 'Queen',
             direction: 'Rock',
             description: 'Queen are a British rock band formed in London in 1970. Their classic line-up was Freddie Mercury (lead vocals, piano), Brian May (guitar, vocals), John Deacon (bass guitar), and Roger Taylor (drums, vocals). Their earliest works were influenced by progressive rock, hard rock and heavy metal, but the band gradually ventured into more conventional and radio-friendly works by incorporating further styles, such as arena rock and pop rock.',
-            image: 'https://mega-stars.ru/img/music_stars/bio_pictures/queen.jpg',
+            image: 'https://www.zarata.info/wp-content/uploads/2018/01/11queen.jpg',
             audio: 'https://oxy.sunproxy.net/file/L3JBaVFyT2crVmRpa09ocEhCWHFTNlpiVFk3TEltS0pHMkh4R3o3YWdPdUdodnF2bGN0L1JPa2dwdDVqZHhpL05BM3JEU1hoemtxM1FiZUZOYk1LT2F6L2ZaemozNVppWTY5ZVdDeXFxdHM9/Queen_-_Bohemian_Rhapsody_(oxy.fm).mp3'
         },
         {

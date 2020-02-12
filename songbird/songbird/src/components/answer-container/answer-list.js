@@ -67,10 +67,12 @@ class AnswerList extends Component {
         }
 
         return (
-            <ul className={ isFinishQuiz ? "list-group none" : "list-group" } 
-                onClick={this.checkAnswer}>
-                    { isFinishQuiz ? '' : elements }
-            </ul>
+            <div className="answer-list-container">
+                <ul className={ isFinishQuiz ? "list-group none" : "list-group" } 
+                    onClick={this.checkAnswer}>
+                        { isFinishQuiz ? '' : elements }
+                </ul>
+            </div>
         );
     }
 };

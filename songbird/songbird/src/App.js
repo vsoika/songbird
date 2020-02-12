@@ -82,7 +82,7 @@ class App extends Component {
         { isConfetti ? <Confetti /> : null }
         <Header page={ page } score={ score } />
         <MusicianContainer { ...this.state } />
-        <div className="music-container">
+        <section className="music-container">
           <AnswerList
             { ...this.state }
             items={musicianData[page - 1]}
@@ -96,7 +96,7 @@ class App extends Component {
             nextCategory={this.showNextCategory}
             startQuizAgain={this.startQuizAgain}
             isFinishQuiz={isFinishQuiz} />
-        </div>
+        </section>
       </div>
     );
   }

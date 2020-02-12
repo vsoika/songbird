@@ -9,7 +9,7 @@ const Description = ({ selectedMusician, page, isFinishQuiz }) => {
     let element = null;
 
     if(!isFinishQuiz) {
-        element = currentData.map((item, index) => {
+      element = currentData.map((item, index) => {
             if(item.name === musician) {
                 return (
                     <Fragment key={index}>
@@ -21,7 +21,7 @@ const Description = ({ selectedMusician, page, isFinishQuiz }) => {
                                 <p>{item.description}</p>
                             </div>
                         </div>
-                        <AudioPlayer src={item.audio}></AudioPlayer>
+                        <AudioPlayer src={item.audio} showJumpControls={false} showLoopControl={false}></AudioPlayer>
                     </Fragment>
                 )
             }

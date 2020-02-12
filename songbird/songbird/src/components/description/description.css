@@ -2,7 +2,7 @@
     width: 40%;
     float: left;
     margin: 0 3.5% 0 3.5%;
-    background: rgb(189, 123, 189);
+    background: #2291ab;
     border-radius: 5px;
     padding: 2%;
 }
@@ -16,22 +16,25 @@
 }
 
 .description {
-    padding: 25px;
-    width: 100%;
+    border: 1px solid rgb(12, 58, 82);
+    padding: 15px;
+    width: 530px;
     margin-top: 20px;
     font-size: 20px;
     display: flex;
     flex-wrap: wrap;
-    color: rgb(214, 214, 214);;
+    color: rgb(214, 214, 214);
+    margin: 0;
 }
 
 .description p {
     text-align: justify;
     margin-left: 10px;
+    font-size: 17px;
 }
 
 .description span {
-    color: #222;
+    color: #131212;
     font-weight: bold;
 }
 
@@ -41,6 +44,65 @@
 
 .musician-info {
     margin-left: 10px;
+}
+
+.description-container {
+    margin-bottom: 10px;
+}
+
+.jumbotron {
+    background: rgba(12, 58, 82, 0.55) !important;
+}
+
+@media (max-width: 1200px) {
+    .description {
+        width: 100%;
+    }
+}
+
+@media (max-width: 770px) {
+    .description h5 {
+        font-size: 25px;
+    }
+
+    .description p{
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 520px) {
+    .description img {
+        width: 40%;
+    }
+
+    .description h5 {
+        font-size: 20px;
+        margin-top: 15px;
+    }
+
+    .rhap_container {
+        padding: 0;
+    }
+
+    .description {
+        padding: 15px;
+    }
+
+}
+
+@media (max-width: 400px) {
+    .rhap_container {
+        width: 250px;
+    }
+
+    .description {
+        padding: 8px;
+        font-size: 17px;
+    }
+
+    .description p {
+        font-size: 15px;
+    }
 }
 
 

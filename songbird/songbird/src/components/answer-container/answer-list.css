@@ -1,9 +1,8 @@
 .list-group {
     list-style: none;
-    margin-top: 20px;
+    border-radius: 5px;
+    text-align: center;
     width: 100%;
-    background:#5a6268 !important;
-    border-radius: 10px;
 }
 
 .none {
@@ -13,21 +12,33 @@
 .list-group-item, .default {
     color: white;
     cursor: pointer;
-    background:#5a6268 !important;
+    background: rgba(12, 58, 82, 0.55) !important;
     font-size: 17px;
     padding: 5px;
     border-radius: 10px;
     font-weight: bold;
+    border: 1px solid rgb(12, 58, 82);
 }
 
 .list-group-item:hover {
-    background:#6e7275 !important;
+    background:#7be3fb93 !important;
 }
 
 .wrong {
-    color: #801e1e;
+    color: #6b0505;
 }
 
 .correct {
-    color: #205010;;
+    color: #4ab925;
+}
+
+.answer-list-container {
+    width: 530px;
+}
+
+@media (max-width: 1200px) {
+    .answer-list-container {
+        margin-bottom: 20px;
+        width: 100%;
+    }
 }

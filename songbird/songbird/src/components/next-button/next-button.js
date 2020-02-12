@@ -18,7 +18,7 @@ const NextButton = ({ activeBtn, nextCategory, isFinishQuiz, score, startQuizAga
                 <h3>Congratulations!</h3>
         <p>You have completed the quiz { text } </p>
             </div>
-            <button onClick={ startQuizAgain } type="button" className="btn btn-secondary">TRY AGAIN</button>
+            <button onClick={ startQuizAgain } type="button" className="btn btn-secondary next">TRY AGAIN</button>
             </>
             :  <button onClick={ nextCategory } type="button" className={ activeClass } disabled={ !activeBtn }>NEXT LEVEL</button>
         }       
