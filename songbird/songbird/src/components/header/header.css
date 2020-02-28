@@ -1,41 +1,41 @@
 .logo {
-    background: url(./assets/logo.svg);
-    width: 100px;
-    height: 100px;
-    background-size: contain;
-    background-repeat: no-repeat;
+  background: url(./assets/logo.svg);
+  width: 100px;
+  height: 100px;
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
 .header {
-    margin-top: 10px;
-    flex-direction: column;
-    color: white;
+  margin-top: 10px;
+  flex-direction: column;
+  color: white;
 }
 
 .header-list {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    padding: 0;
-    margin-bottom: 25px;
-    border-radius: 5px;
-    list-style: none;
-    background-color: #1e5973;
-    border-radius: 10px;
-} 
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 0;
+  margin-bottom: 25px;
+  border-radius: 5px;
+  list-style: none;
+  background-color: #1e5973;
+  border-radius: 10px;
+}
 
 .list-item {
-    flex: auto;
-    margin: 10px;
-    padding: 0;
+  flex: auto;
+  margin: 10px;
+  padding: 0;
 }
 
 .active {
-    background-color: rgb(102, 198, 214);
-    border-radius: 10px;
+  background-color: rgb(102, 198, 214);
+  border-radius: 10px;
 }
 
 .score {
-    margin-left: 3px;
-    line-height: 85px;
+  margin-left: 3px;
+  line-height: 85px;
 }

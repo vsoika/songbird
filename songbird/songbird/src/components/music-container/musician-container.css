@@ -1,127 +1,127 @@
 .musician-image {
-    width: 25%; 
-    float: left; 
-    margin: 0 0 0 3.5%; 
-    background:#2291ab; 
-    border-radius: 5px; 
-    padding: 1%; 
+  width: 25%;
+  float: left;
+  margin: 0 0 0 3.5%;
+  background: #2291ab;
+  border-radius: 5px;
+  padding: 1%;
 }
 
 .musician-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
 
 .musician-container h5 {
-    color: rgb(249, 220, 13);
-    font-size: 30px;
-    margin-top: 10px;
-    margin-bottom: 50px;
-    text-align: center;
+  color: rgb(249, 220, 13);
+  font-size: 30px;
+  margin-top: 10px;
+  margin-bottom: 50px;
+  text-align: center;
 }
 
 .rhap_progress-section {
-    color: white;
+  color: white;
 }
 
 .rhap_controls-section {
-    margin-top: 5x;
-    display: flex;
-    justify-content: space-between;
+  margin-top: 5x;
+  display: flex;
+  justify-content: space-between;
 }
 
 .rhap_button-clear {
-    height: 40px;
-    width: 40px;
-    overflow: visible;
-    border: none;
-    outline: none;
+  height: 40px;
+  width: 40px;
+  overflow: visible;
+  border: none;
+  outline: none;
 }
 
 .rhap_button-clear svg {
-    width: 40px;
-    height: 40px;
-    color: #1e8abd;
+  width: 40px;
+  height: 40px;
+  color: #1e8abd;
 }
 
 .rhap_button-clear svg:hover {
-    cursor: pointer;
-    color: rgb(127, 215, 249);
+  cursor: pointer;
+  color: rgb(127, 215, 249);
 }
 
 .rhap_container {
-    background-color: transparent;
-    box-shadow: none;
-    height: auto;
-    width: auto;
-    min-width: 250px;
-    min-height: 50px;
-    padding: 0;
+  background-color: transparent;
+  box-shadow: none;
+  height: auto;
+  width: auto;
+  min-width: 250px;
+  min-height: 50px;
+  padding: 0;
 }
 
 .rhap_time {
-    color: white;
+  color: white;
 }
 
-.rhap_progress-bar-show-download, .rhap_download-progress {
-    background-color: rgba(123, 165, 189, 0.5);
+.rhap_progress-bar-show-download,
+.rhap_download-progress {
+  background-color: rgba(123, 165, 189, 0.5);
 }
 
 .rhap_progress-indicator {
-    background-color: rgb(11, 122, 187);
-    opacity: 1;
-    box-shadow: none;
+  background-color: rgb(11, 122, 187);
+  opacity: 1;
+  box-shadow: none;
 }
 
 .rhap_play-pause-button {
-    font-size: 0;
+  font-size: 0;
 }
 
 .rhap_volume-bar {
-    background-color: rgba(123, 165, 189, 0.5);
+  background-color: rgba(123, 165, 189, 0.5);
 }
 
 .rhap_volume-indicator {
-    background-color: rgb(11, 122, 187);
-    opacity: 1;
-    box-shadow: none;
+  background-color: rgb(11, 122, 187);
+  opacity: 1;
+  box-shadow: none;
 }
 
 .rhap_additional-controls {
-    display: none;
+  display: none;
 }
 
-button:focus, 
+button:focus,
 .rhap_progress-container:focus,
 .rhap_container:focus,
 .rhap_volume-bar-area:focus {
-    outline: none;
+  outline: none;
 }
 
 @media (max-width: 770px) {
-    .musician-image {
-        width: 40%; 
-    }
+  .musician-image {
+    width: 40%;
+  }
 }
 
 @media (max-width: 520px) {
-    .rhap_controls-section,
-    .rhap_progress-section {
-        width: 250px;
-        margin: 0 auto;
-    }
+  .rhap_controls-section,
+  .rhap_progress-section {
+    width: 250px;
+    margin: 0 auto;
+  }
 
-    .musician-container h5 {
-        margin-top: 20px;
-        margin-bottom: 20px;
-    }
-    
+  .musician-container h5 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
 }
 
 @media (max-width: 480px) {
-    .musician-image {
-        width: 50%; 
-    }
+  .musician-image {
+    width: 50%;
+    height: 50%;
+  }
 }
