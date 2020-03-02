@@ -1,0 +1,45 @@
+.list-group {
+  list-style: none;
+  border-radius: 5px;
+  text-align: center;
+  width: 100%;
+}
+
+.none {
+  display: none;
+}
+
+.list-group-item,
+.default {
+  color: white;
+  cursor: pointer;
+  background: rgba(12, 58, 82, 0.55) !important;
+  font-size: 17px;
+  padding: 5px;
+  border-radius: 10px;
+  font-weight: bold;
+  border: 1px solid rgb(12, 58, 82);
+}
+
+.list-group-item:hover {
+  background: #7be3fb93 !important;
+}
+
+.wrong {
+  color: #6b0505;
+}
+
+.correct {
+  color: #4ab925;
+}
+
+.answer-list-container {
+  width: 530px;
+}
+
+@media (max-width: 1200px) {
+  .answer-list-container {
+    margin-bottom: 20px;
+    width: 100%;
+  }
+}
